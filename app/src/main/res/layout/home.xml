@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fontFamily="@font/lexenddeca"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/Categories"
+        android:layout_width="217dp"
+        android:layout_height="89dp"
+        android:fontFamily="@font/lexenddeca"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="Choose Concern Categories"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageButton
+        android:id="@+id/btnprofile"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:background="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageButton
+        android:id="@+id/btnmeeting"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:background="@drawable/group"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="623dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99">
+
+        <!-- child view -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/ivSanitation"
+                android:layout_width="158dp"
+                android:layout_height="205dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/sanitation"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ivSecurity"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.151" />
+
+            <TextView
+                android:id="@+id/Sanitation"
+                android:layout_width="231dp"
+                android:layout_height="49dp"
+                android:fontFamily="@font/lexenddeca"
+                android:gravity="center_horizontal"
+                android:text="Sanitation"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.081" />
+
+            <Button
+                android:id="@+id/btnHazardous"
+                android:layout_width="184dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="60px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Improper Disposal of Hazardous Waste"
+                android:textColor="@color/black"
+                android:textSize="20px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.07"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.949" />
+
+            <Button
+                android:id="@+id/btnDefacation"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="30px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Open Defacation"
+                android:textColor="@color/black"
+                android:textSize="20px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.072"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.676" />
+
+            <Button
+                android:id="@+id/btnCanal"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="30px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Canal/Waterway Concerns"
+                android:textColor="@color/black"
+                android:textSize="20px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.072"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.759" />
+
+            <Button
+                android:id="@+id/btnContaminated"
+                android:layout_width="184dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="60px"
+                android:layout_marginBottom="30px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Contaminated Water Resources"
+                android:textColor="@color/black"
+                android:textSize="20px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.07"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.863" />
+
+            <Button
+                android:id="@+id/btnImproper"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="30px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Improper Garbage Disposal"
+                android:textColor="@color/black"
+                android:textSize="20px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.072"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.598" />
+
+            <ImageButton
+                android:id="@+id/ivSecurity"
+                android:layout_width="158dp"
+                android:layout_height="205dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/security"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ibInfrastructure"
+                app:layout_constraintStart_toEndOf="@id/ivSanitation"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.151" />
+
+            <TextView
+                android:id="@+id/Security"
+                android:layout_width="237dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/lexenddeca"
+                android:gravity="center_horizontal"
+                android:text="Security"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.082" />
+
+            <Button
+                android:id="@+id/btnThreats"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="30px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Threats/Death Threats"
+                android:textColor="@color/black"
+                android:textSize="22px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.299"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.596" />
+
+            <Button
+                android:id="@+id/btnTheft"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="30px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Theft"
+                android:textColor="@color/black"
+                android:textSize="22px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.299"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.674" />
+
+            <ImageButton
+                android:id="@+id/ibInfrastructure"
+                android:layout_width="158dp"
+                android:layout_height="205dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/infrastructure"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ibNeighbor"
+                app:layout_constraintStart_toEndOf="@id/ivSecurity"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.151" />
+
+            <TextView
+                android:id="@+id/Infrastructure"
+                android:layout_width="231dp"
+                android:layout_height="49dp"
+                android:fontFamily="@font/lexenddeca"
+                android:gravity="center_horizontal"
+                android:text="Infrastructure"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.527"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.081" />
+
+            <Button
+                android:id="@+id/btnCollapse"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="30px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Collapse Bridge Concerns"
+                android:textColor="@color/black"
+                android:textSize="22px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.521"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.596" />
+
+            <Button
+                android:id="@+id/btnDamage"
+                android:layout_width="180dp"
+                android:layout_height="37dp"
+                android:layout_marginBottom="30px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Damage Roads"
+                android:textColor="@color/black"
+                android:textSize="22px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.521"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.682" />
+
+            <Button
+                android:id="@+id/btnOtherDamage"
+                android:layout_width="180dp"
+                android:layout_height="52dp"
+                android:layout_marginBottom="30px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Other Damage Public Infrastructure"
+                android:textColor="@color/black"
+                android:textSize="22px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.521"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.786" />
+
+            <ImageButton
+                android:id="@+id/ibNeighbor"
+                android:layout_width="158dp"
+                android:layout_height="205dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/neighbor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ibOthers"
+                app:layout_constraintStart_toEndOf="@id/ibInfrastructure"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.151" />
+
+            <TextView
+                android:id="@+id/Neighbor"
+                android:layout_width="231dp"
+                android:layout_height="49dp"
+                android:fontFamily="@font/lexenddeca"
+                android:gravity="center_horizontal"
+                android:text="Neighbor Concern"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.764"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.083" />
+
+            <Button
+                android:id="@+id/btnVandalism"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="30px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Vandalism"
+                android:textColor="@color/black"
+                android:textSize="22px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.746"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.902" />
+
+            <Button
+                android:id="@+id/btnProperty"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="30px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Property Damage"
+                android:textColor="@color/black"
+                android:textSize="22px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.747"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.693" />
+
+            <Button
+                android:id="@+id/btnParking"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="30px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Parking"
+                android:textColor="@color/black"
+                android:textSize="22px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.747"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.593" />
+
+            <Button
+                android:id="@+id/btnLoud"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="30px"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/lexenddeca"
+                android:text="Loud Noises"
+                android:textColor="@color/black"
+                android:textSize="22px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.747"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.798" />
+
+            <ImageButton
+                android:id="@+id/ibOthers"
+                android:layout_width="158dp"
+                android:layout_height="205dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ibNeighbor"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.151" />
+
+            <TextView
+                android:id="@+id/Others"
+                android:layout_width="197dp"
+                android:layout_height="47dp"
+                android:fontFamily="@font/lexenddeca"
+                android:gravity="center_horizontal"
+                android:text="Other Concern"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.083" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
